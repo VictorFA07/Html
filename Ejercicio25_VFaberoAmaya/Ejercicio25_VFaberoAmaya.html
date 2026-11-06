@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Ejercicio 25, tablas, formularios</title>
+
+</head>
+
+<body>
+
+    <header>
+
+        <p><a href="#intro">Introducción</a>     <a href="#glos">Glosario</a>     <a href="#calif">Calificaciones</a>     <a href="#reg">Registro</a></p>
+        <h1>Plantilla de Evaluación HTML5 y CSS3</h1>
+
+    </header>
+
+    <main>
+
+        <section id="intro">
+
+            <h2>1. Estructura y Metodología</h2>
+
+            <article>
+
+                <h3>Instrucciones del Curso</h3>
+                <p>A continuación se detallan los contenidos evaluables e instrucciones generales:</p>
+
+                <h4>Requisitos generales (Lista no ordenada - ul):</h4>
+
+                <ul>
+                    <li>Uso correcto de etiquetas semánticas HTML5.</li>
+                    <li>Aplicación de hojas de estilo CSS externas o internas.</li>
+                    <li>Validación adecuada de los campos de formulario.</li>
+                </ul>
+
+                <h4>Pasos para la entrega (Lista ordenada - ol):</h4>
+
+                <ol>
+                    <li>Descargar la plantilla de evaluación.</li>
+                    <li>Completar los ejercicios de tablas y formularios.</li>
+                    <li>Validar el código en el servicio del W3C.</li>
+                    <li>Subir el archivo al aula virtual.</li>
+                </ol>
+
+            </article>
+        </section>
+
+        <br>
+
+        <section id="glos">
+
+            <h2>2. Glosario Técnico</h2>
+
+            <p>Conceptos clave para la evaluación teórica:</p>
+
+            <dl>
+                <dt><strong>HTML5</strong></dt>
+                <dd>Lenguaje de marcado estándar para la estructuración y presentación de contenido en la web.</dd>
+                <dt><strong>CSS3</strong></dt>
+                <dd>Lenguaje de diseño gráfico para definir y estructurar la presentación de un documento estructurado en HTML.</dd>
+                <dt><strong>Etiqueta Semántica</strong></dt>
+                <dd>Elemento HTML que aporta significado claro tanto al desarrollador como al navegador sobre su contenido (ej. nav, section, article).</dd>
+            </dl>
+
+        </section>
+
+        <br>
+
+        <section id="calif">
+
+            <h2>3. Listado Completo de Alumnos (Tabla 4x8)</h2>
+
+            <p id="descTabla">Registro Académico y Seguimiento de Calificaciones</p>
+
+            <div id="tabla">
+                <table>
+                    <tr>
+                        <th>ID</th>
+                        <th>Alumno</th>
+                        <th>DNI</th>
+                        <th>E-mail</th>
+                        <th>Teoría</th>
+                        <th>Práctica</th>
+                        <th>Asistencia</th>
+                        <th>Estado</th>
+                    </tr>
+                    <tr>
+                        <th>001</th>
+                        <td>Juan Pérez</td>
+                        <td>123456878A</td>
+                        <td>juan@email.com</td>
+                        <td>8.5</td>
+                        <td>9.0</td>
+                        <td>95%</td>
+                        <td>Aprobado</td>
+                    </tr>
+                    <tr>
+                        <th>002</th>
+                        <td>María López</td>
+                        <td>87654321B</td>
+                        <td>maria@email.com</td>
+                        <td>10.0</td>
+                        <td>9.5</td>
+                        <td>100%</td>
+                        <td>Sobresaliente</td>
+                    </tr>
+                    <tr>
+                        <th>003</th>
+                        <td>Carlos Ruiz</td>
+                        <td>11223344C</td>
+                        <td>carlos@email.com</td>
+                        <td>4.5</td>
+                        <td>5.0</td>
+                        <td>80%</td>
+                        <td>Suspenso</td>
+                    </tr>
+                    <tr>
+                        <th>004</th>
+                        <td>Ana Gómez</td>
+                        <td>55667788D</td>
+                        <td>ana@email.com</td>
+                        <td>7.0</td>
+                        <td>8.0</td>
+                        <td>90%</td>
+                        <td>Aprobado</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <br>
+
+        <section id="reg">
+
+            <h2>4. Formulario Completo de Usuario</h2>
+
+            <form method="post" action="">
+
+                <fieldset>
+
+                    <legend>1. Información de Contacto y Acceso</legend>
+
+                    <label for="busqueda">Búsqueda rápida de usuario:</label>
+                    <br>
+                    <input id="busqueda" name="busqueda" type="search" placeholder="Buscar perfil..." required>
+
+                    <br>
+
+                    <label for="correo">Correo corporativo:</label>
+                    <br>
+                    <input id="correo" name="correo" type="email" placeholder="mimail@gmail.com" required>
+
+                    <br>
+
+                    <label for="web">Página Web personal:</label>
+                    <br>
+                    <input id="web" name="web" type="url" placeholder="www.mipaginaweb.es" required>
+
+                    <br>
+
+                    <label for="telefono">Teléfono de contacto:</label>
+                    <br>
+                    <input id="telefono" name="telefono" type="tel" placeholder="600102030" required>
+
+                    <br>
+
+                    <label for="dni">DNI:</label>
+                    <br>
+                    <input id="dni" name="dni" type="text" pattern="[0-9]{8}[A-Z]" placeholder="12345678X" required>
+
+                </fieldset>
+
+                <fieldset>
+
+                    <legend>2. Configuración de Parámetros y Preferencias</legend>
+
+                    <label for="entero">Número entero:</label>
+                    <br>
+                    <input id="entero" name="entero" type="number" min="2" max="10" step="2" value="6">
+
+                    <br>
+
+                    <label for="decimal">Número decimal:</label>
+                    <br>
+                    <input id="decimal" name="decimal" type="number" step="any" placeholder="Ej: 3.1416">
+
+                    <br>
+
+                    <label for="nivel">Nivel de satisfacción:</label>
+                    <br>
+                    <input id="nivel" name="nivel" type="range" min="0" max="100" step="10" value="50">
+
+                    <br>
+
+                    <label for="ciudad">Ciudad de Origen:</label>
+                    <br>
+                    <input id="ciudad" name="ciudad" type="text" list="origen" placeholder="Seleccione o escriba una ciudad.">
+
+                    <datalist id="origen">
+                        <option>Jerez de la Frontera</option>
+                        <option>Sevilla</option>
+                        <option>Granada</option>
+                        <option>Madrid</option>
+                        <option>Zaragoza</option>
+                    </datalist>
+
+                    <br>
+
+                    <label for="color">Color corporativo preferido:</label>
+                    <br>
+                    <input id="color" name="color" type="color" value="#ffffff">
+
+                </fieldset>
+
+                <fieldset>
+
+                    <legend>3. Disponibilidad Horaria</legend>
+
+                    <label for="fecha">Fecha de cita:</label>
+                    <br>
+                    <input id="fecha" name="fecha" type="date">
+
+                    <br>
+
+                    <label for="hora">Hora preferida:</label>
+                    <br>
+                    <input id="hora" name="hora" type="time" value="15:00">
+
+                </fieldset>
+            </form>
+
+            <div id="boton">
+                <button>Enviar Formulario</button>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+
+        <p>&copy; 2026 Lenguaje de marcas para el grado 1ºDAW, Víctor Fabero Amaya</p>
+        
+    </footer>
+</body>
+
+<style>
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px;
+    text-align: left;
+    background-color: rgb(255, 228, 255);
+}
+section{
+    border: solid grey 1px;
+    padding: 15px;
+}
+header, h1, h2, #descTabla, footer{
+    text-align: center;
+}
+table{
+    border: 3px solid rgb(12, 0, 78);
+    border-collapse: collapse;
+    text-align: center;
+    padding: 10px;
+}
+th{
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+}
+td{
+    border: 2px dashed grey;
+    border-collapse: collapse;
+    padding: 10px;
+}
+#boton{
+    text-align: right;
+}
+
+</style>
+</html>
