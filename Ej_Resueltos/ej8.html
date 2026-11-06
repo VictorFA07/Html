@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Registro de Socio - Club Deportivo</title>
+</head>
+<body>
+
+  <header>
+    <h1>Club Deportivo "Olimpo"</h1>
+    <p>Formulario de inscripción para nuevos socios</p>
+  </header>
+
+  <hr>
+
+  <main>
+    <!-- Contenedor del formulario -->
+    <form action="" method="POST">
+      
+      <!-- Agrupación de campos del formulario -->
+      <fieldset>
+        <legend>Datos Personales del Socio</legend>
+
+        <!-- Campo Nombre -->
+        <p>
+          <label for="nombre">Nombre completo:</label><br>
+          <input type="text" id="nombre" name="nombre_socio" required placeholder="Ej. Ana Pérez">
+        </p>
+
+        <!-- Campo Email -->
+        <p>
+          <label for="correo">Correo electrónico:</label><br>
+          <input type="email" id="correo" name="email_socio" required placeholder="usuario@email.com">
+        </p>
+
+        <!-- Campo Contraseña -->
+        <p>
+          <label for="clave">Contraseña de acceso:</label><br>
+          <input type="password" id="clave" name="password_socio" required>
+        </p>
+
+        <!-- Campo Fecha de Nacimiento -->
+        <p>
+          <label for="fecha_nac">Fecha de nacimiento:</label><br>
+          <input type="date" id="fecha_nac" name="fecha_nacimiento">
+        </p>
+      </fieldset>
+
+      <br>
+
+      <fieldset>
+        <legend>Detalles de la Suscripción</legend>
+
+        <!-- Botones de radio (Selección única) -->
+        <p>
+          Tipo de cuota:<br>
+          <input type="radio" id="cuota_mensual" name="tipo_cuota" value="mensual" checked>
+          <label for="cuota_mensual">Mensual</label><br>
+          
+          <input type="radio" id="cuota_anual" name="tipo_cuota" value="anual">
+          <label for="cuota_anual">Anual (10% descuento)</label>
+        </p>
+
+        <!-- Lista desplegable -->
+        <p>
+          <label for="deporte">Deporte principal:</label><br>
+          <select id="deporte" name="deporte_favorito">
+            <option value="fútbol">Fútbol</option>
+            <option value="baloncesto">Baloncesto</option>
+            <option value="tenis">Tenis</option>
+            <option value="natacion">Natación</option>
+          </select>
+        </p>
+
+        <!-- Casillas de verificación (Selección múltiple) -->
+        <p>
+          Servicios adicionales:<br>
+          <input type="checkbox" id="taquilla" name="servicios[]" value="taquilla">
+          <label for="taquilla">Alquiler de taquilla</label><br>
+
+          <input type="checkbox" id="piscina" name="servicios[]" value="piscina">
+          <label for="piscina">Acceso libre a piscina</label>
+        </p>
+
+        <!-- Área de texto libre -->
+        <p>
+          <label for="comentarios">Observaciones médicas o alergias:</label><br>
+          <textarea id="comentarios" name="observaciones" rows="4" cols="40" placeholder="Indica si tienes alguna condición médica..."></textarea>
+        </p>
+      </fieldset>
+
+      <br>
+
+      <!-- Botón de envío -->
+      <input type="submit" value="Completar Inscripción">
+
+    </form>
+  </main>
+
+  <hr>
+
+  <footer>
+    <p>&copy; 2026 Club Deportivo Olimpo. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Formulario Completo de Alta de Proveedor</title>
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Formulario de Alta y Registro de Proveedores</h1>
+        <p>Ejemplo integral de formularios HTML5 para la homologación de empresas suministradoras</p>
+
+    </header>
+
+    <main>
+
+        <hr>
+
+        <form action="" method="post">
+
+            <fieldset>
+
+                <legend>1. Identificación Fiscal de la Empresa</legend>
+
+                <label for="razon">Buscar registro mercantil previo:</label>
+                <br>
+                <input id="razon" name="razon" type="text" placeholder="Ingrese razón social">
+
+                <br>
+
+                <label for="cif">CIF de la empresa (Obligatorio):</label>
+                <br>
+                <input id="cif" name="cif" type="text" pattern="[A-Z]{1}[0-9]{8}" placeholder="B12345678" required="required">
+
+                <br>
+
+                <label for="telefono">Teléfono de la centralita:</label>
+                <br>
+                <input id="telefono" name="telefono" type="tel" placeholder="Ej: 910001122">
+
+                <br>
+
+                <label for="correo">Correo electrónico para pedidos:</label>
+                <br>
+                <input id="correo" name="correo" type="email" placeholder="pedidos@proveedor.com">
+
+                <br>
+
+                <label for="catalogo">Catálogo digital o sitio web corporativo:</label>
+                <br>
+                <input id="catalogo" name="catalogo" type="url" placeholder="https://www.proveedor.com">
+
+            </fieldset>
+
+            <fieldset>
+
+                <legend>2. Capacidad de Suministro y Condiciones Comercial</legend>
+
+                <label for="plazo">Plazo mínimo de entrega en días (mínimo 1, máximo 30, saltos de 5):</label>
+                <br>
+                <input id="plazo" name="plazo" type="number" min="1" max="30" step="5" value="5">
+
+                <br>
+
+                <label for="descuento">Descuento aplicado por volumen (€):</label>
+                <br>
+                <input id="descuento" name="descuento" type="number" step="any" placeholder="0.00">
+
+                <br>
+
+                <label for="capacidad">Capacidad operativa estimada (0% al 100%):</label>
+                <br>
+                <input id="capacidad" name="capacidad" type="range" min="0" max="100" step="5" value="50">
+
+                <br>
+
+                <label for="color">Color de identificación corporativa:</label>
+                <br>
+                <input id="color" name="color" type="color" value="#ffffff">
+
+            </fieldset>
+
+            <fieldset>
+
+                <legend>3. Logística, Horarios de Entrega y Almacén</legend>
+
+                <label for="fecha">Fecha prevista para auditoría de calidad:</label>
+                <br>
+                <input id="fecha" name="fecha" type="date">
+
+                <br>
+
+                <label for="hora">Hora límite para recepción de mercancía:</label>
+                <br>
+                <input id="hora" name="hora" type="time" value="14:00">
+
+                <br>
+
+                <label for="region">Región logística de distribución:</label>
+                <br>
+                <input id="region" name="region" type="text" list="origen" placeholder="Seleccione o escriba...">
+
+                <datalist id="origen">
+
+                    <option value="España">España</option>
+                    <option>Francia</option>
+                    <option>Portugal</option>
+                    <option>Italia</option>
+
+                </datalist>
+
+            </fieldset>
+
+            <fieldset>
+
+                <legend>4. Acreditaciones y Certificados Legales</legend>
+
+                <label for="tarifas">Tarifas vigentes y certificado IAE (Excel o PDF):</label>
+                <br>
+                <input id="tarifas" name="tarifas" type="file" accept=".pdf, .xcl">
+
+                <br>
+
+                <label for="logotipo">Logotipo oficial de la marca (imágenes):</label>
+                <br>
+                <input id="logotipo" name="logotipo" type="file" accept=".png, .jpg, .webp">
+
+                <br>
+
+                <label for="instrucciones">Instrucciones o locución de bienvenida (audio):</label>
+                <br>
+                <input id="instrucciones" name="instrucciones" type="file" accept=".mp3, .wav">
+
+            </fieldset>
+
+        </form>
+
+        <button>Tramitar Alta de Proveedor</button>
+        <button>Restablecer Datos</button>
+
+    </main>
+
+    <footer>
+
+        <p>&copy; 2026 Material Docente de Lenguaje de Marcas. Módulo de Formularios HTML5.</p>
+
+    </footer>
+
+</body>
+
+<style>
+
+body{
+    background-color: aliceblue;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+main{
+    text-align: justify;
+}
+
+</style>
+</html>

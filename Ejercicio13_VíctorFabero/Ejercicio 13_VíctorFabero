@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<!-- <!DOCTYPE html>: Declara la versión del documento e indica al navegador que use el estándar HTML5. -->
+
+<html lang="es">
+    <!-- <html>: Etiqueta raíz que envuelve todo el contenido del documento web. lang="es" indica que el idioma es español. -->
+
+<head>
+    <!-- <head>: Contenedor de metadatos e información del documento que no se muestra directamente en la pantalla. -->
+
+    <link rel="stylesheet" href="css">
+    <!-- Con <link> relacionamos el html con otro fichero por separado en el que está nuestro formato css-->
+
+    <meta charset="UTF-8">
+    <!-- <meta>: Define metadatos. charset="UTF-8" establece la codificación de caracteres (acentos, ñ, etc.). -->
+
+    <title>TechStore - Tienda de Informática</title>
+    <!-- <title>: Define el título que aparece en la pestaña del navegador. -->
+
+</head>
+
+<body>
+    <!-- <body>: Contiene todo el contenido visible de la página web (texto, imágenes, enlaces, etc.). -->
+
+    <header>
+        <!-- <header>: Define la cabecera principal de la página web o de una sección. -->
+
+        <h1>TechStore 2026 - Tu Tienda de Informática</h1>
+        <!-- <h1>: Encabezado principal de máximo nivel (solo debe haber uno importante por página). -->
+
+        <p>Los mejores componentes y ordenadores montados al mejor precio.</p>
+        <!-- <p> Actúa como un pequeño párrafo de texto-->
+
+        <ul>
+            <!-- <ul> Lo usamos para hacer una lista sin orden, es decir, que se clasifica con puntos-->
+
+            <li class="lista"><a href="#1">Catálogo</a></li>
+            <li class="lista"><a href="#2">Garantía</a></li>
+            <li class="lista"><a href="#3">Opiniones</a></li>
+            <!-- <li> Se usa para cada elementode una lista, a su vez usamos <a> con href para referenciar, en este caso a un elemento de la web con un id-->
+        </ul>
+    </header>
+
+    <hr>
+    <!-- <hr> Lo usamos para insertar una línea que aporte claridad visual a nuestra web-->
+
+    <main>
+        <!-- <main> Comienza el cuerpo de la web, es decir, todo lo que no es cabecera ni pie-->
+
+        <section id="1">
+            <!-- Creamos una primera sección a la que además, le damos un id, con el que nos podremos servir para redirigirnos a esta parte de la web-->
+
+            <h2>Catálogo de Ordenadores Destacados</h2>
+            <!-- <h2> Nos sirve para que haya cierta jerarquía entre los títulos dentro de la web, igual pasa con <h3>, <h4>, etc.-->
+
+            <article>
+                <!-- Usamos <article> para separar elementos que estén algo relacionados en una web-->
+
+                <h3>PC Gaming Ultra 2026</h3>
+                <!-- <h3> Nos sirve para hacer un tulo de menor importancia que el h2-->
+
+                <h4>Ideal para jugar a 4K y streaming</h4>
+                <!-- <h4> Lo usamos para un título que no tenga gran importancia, pero siga siendo algo más relevanteque otros-->
+
+                <figure>
+                    <!-- Con <figure> insertamos una imagen en la web que puede provenir de nuestro equipo-->
+
+                    <img src="Foto.png">
+                    <!-- <img> nos indica que insertamos la imagen, y src nos da la opción de poner en que ruta está el archivo de la foto que vamos a poner-->
+
+                    <figcaption>Figura 1: Torre PC Gaming con refrigeración líquida.</figcaption>
+                    <!-- Con <figcaption> ponemos un pequeño texto como pie de foto-->
+
+                </figure>
+                <p>Lanzado en enero de 2026. Equipado con procesador de última generación y 32 GB de RAM. Incluye tarjeta gráfica <strong>de alta gama.</strong></p>
+                <!-- Aquí usamos <strong> para resaltar la importancia de algo, en este caso, para destacar que el ordenador es de alta gama-->
+            
+            </article>
+            <article>
+                <h3>Portátil Workstation Pro</h3>
+                <h4>Potencia bruta para edición de vídeo</h4>
+                <figure>
+                    <img src="Foto.png">
+                    <figcaption>Figura 2: Portátil de alto rendimiento con pantalla OLED.</figcaption>
+                </figure>
+                <p>Diseñado para profesionales que necesitan movilidad. Cuenta con pantalla de <mark>120 Hz</mark> y chasis de aluminio <em>ultra resistente.</em></p>
+                <!-- En este <p> usamos <mark> para que parte del texto importante se vea resaltado como con un subrayador-->
+
+            </article>
+            <article>
+                <h3>Mini PC Oficina Eco</h3>
+                <h4>Silencioso, compacto y de bajo consumo</h4>
+                <figure>
+                    <img src="Foto.png">
+                    <figcaption>Figura 3: Ordenador de formato reducido para escritorios pequeños.</figcaption>
+                </figure>
+                <p>La opción perfecta para tareas administrativas y navegación. Ocupa <strong>muy poco espacio.</strong></p>
+            </article>
+        </section>
+
+        <!--Cerramos con </section> tras poner los tres artículos sobre los 3 productos-->
+
+        <hr>
+
+        <section id="2">
+            <!-- Pasamos ahora a crear la segunda sección de nuestra página web-->
+
+            <h2>Pasos para Tramitar tu Garantía</h2>
+            <p>Sigue estas etapas si necesitas soporte técnico o sustitución:</p>
+            <ol>
+                <!-- Usamos ahora <ol> para hacer una lista ordenada-->
+
+                <li><strong>Diagnóstico: </strong>Ponte en contacto con nuestro equipo técnico.</li>
+                <li><strong>Envío: </strong>Prepara el equipo en su caja original.</li>
+                <li><strong>Reparación: </strong>Nuestros técnicos revisan y reparan el equipo.</li>
+                <li><strong>Devolución: </strong>Te enviamos el equipo como nuevo a tu domicilio.</li>
+                <!-- Con <strong> marcamos en negrita palabras que tengan relevancia en el texto-->
+            </ol>
+        </section>
+        <hr>
+        <section id="3">
+            <!-- Por último creamos una tercera sección-->
+
+            <h2>Opinión de la Prensa Especializada</h2>
+            <blockquote>"TechStore ofrece el mejor montaje de componentes de todo el sector informático en 2026."</blockquote>
+            <!-- Usamos <blockquote> para poner un texto de manera "literal" tal como lo ha dicho alguien-->
+
+            <cite>— Revista Hardware Digital</cite>
+            <!-- Usamos <cite> para citar quien ha dicho el <blockquote>-->
+
+            <p>Puedes leer más análisis de nuestros equipos en la web de <a href="https://www.asociacionhardware.es/">Asociación Hardware.</a></p>
+            <!--Usamos <a> con href que nos redirigirá a la dirección web que hemos puesto-->
+
+        </section>
+        <hr>
+    </main>
+
+    <footer>
+    <!-- Con <footer> comienza el pie de página-->
+
+    <p>&copy;2026 TechStore Informática. Todos los derechos reservados.</p>
+    <!-- Usamos <p> en el footer siempre que haya que poner los derechos reservado de la web-->
+    <!-- El &copy lo usamos para insertar el símbolo del copyright, un símbolo que no se encuentra en el teclado-->
+
+    </footer>
+
+</body>
+
+</html>
+<!-- Acabamos cerrando las etiquetas con </body> y </html>-->

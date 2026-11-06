@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<!-- <!DOCTYPE html>: Declara la versión del documento e indica al navegador que use el estándar HTML5. -->
+
+<!-- <html>: Etiqueta raíz que envuelve todo el contenido del documento web. lang="es" indica que el idioma es español. -->
+<html lang="es">
+
+<!-- <head>: Contenedor de metadatos e información del documento que no se muestra directamente en la pantalla. -->
+<head>
+    <!-- <meta>: Define metadatos. charset="UTF-8" establece la codificación de caracteres (acentos, ñ, etc.). -->
+    <meta charset="UTF-8">
+
+    <!-- <title>: Define el título que aparece en la pestaña del navegador. -->
+    <title>Ejemplo de Clase: Receta de Pizza Casera</title>
+</head>
+
+<!-- <body>: Contiene todo el contenido visible de la página web (texto, imágenes, enlaces, etc.). -->
+<body>
+
+    <!-- <header>: Define la cabecera principal de la página web o de una sección. -->
+    <header>
+        <!-- <h1>: Encabezado principal de máximo nivel (solo debe haber uno importante por página). -->
+        <h1>Mi Blog de Cocina Fácil</h1>
+
+        <p>
+            <!-- <del>: Indica que el texto ha sido eliminado o reemplazado. 
+                cite="URL" proporciona la fuente de la información eliminada. 
+                datetime="YYYY-MM-DD" indica la fecha de eliminación. -->
+            <del 
+                cite="https://miblog.com/cambio-header.html" 
+                datetime="2026-09-29">
+                Aprende a cocinar paso a paso con recetas sencillas
+            </del> 
+            <br>
+            <!-- <ins>: Indica que el texto ha sido insertado o reemplazado. 
+                cite="URL" proporciona la fuente de la información insertada. 
+                datetime="YYYY-MM-DD" indica la fecha de inserción. -->
+            <ins 
+                cite="https://miblog.com/cambio-header.html" 
+                datetime="2026-09-29">
+                Aprende a cocinar paso a paso con recetas hiper-sencillas
+            </ins>
+        </p>
+        
+        <!-- <nav>: Contenedor semántico reservado para el menú de navegación y sus enlaces. -->
+        <nav>
+            <p>
+                <!-- <strong>: Otorga importancia al texto y por defecto lo muestra en negrita. -->
+                <strong>Menú de navegación:</strong> 
+                
+                <!-- <a> (Versión 1 - Interno/Ancla): Enlace que salta a un punto específico de la propia página usando href="#id". -->
+                <a href="#receta">Ir directamente a la Receta</a> | 
+                
+                <!-- <a> (Versión 2 - Relativo): Enlace a otro archivo HTML que está dentro de la misma carpeta del proyecto. -->
+                <a href="contacto.html">Página de Contacto</a> | 
+
+                <!-- <a> (Versión 3 - Absoluto): Enlace a una página externa completa. target="_blank" la abre en otra pestaña. -->
+                <a href="https://www.google.com" target="_blank">Buscador Google</a>
+            </p>
+        </nav>
+    </header>
+
+    <!-- <hr />: Inserta una línea horizontal para separar visualmente distintas partes del contenido. -->
+    <hr />
+
+    <!-- <main>: Contenedor que alberga el contenido único, principal y central de la página web. -->
+    <main>
+
+        <!-- <section>: Agrupa un bloque o módulo temático general dentro del documento. -->
+        <section>
+            <!-- <h2>: Encabezado de nivel 2, utilizado para los títulos de secciones principales. -->
+            <h2>Sección 1: Preparación previa</h2>
+            <p>Antes de empezar a cocinar, es fundamental organizar los ingredientes y utensilios necesarios.</p>
+
+            <!-- <h3>: Encabezado de nivel 3, utilizado para subtítulos dentro de una sección. -->
+            <h3>Utensilios necesarios (Lista No Ordenada):</h3>
+
+            <!-- <ul>: Crea una lista No Ordenada (sus elementos se muestran con viñetas por defecto). -->
+            <ul>
+                <!-- <li>: Define cada elemento o ítem individual dentro de una lista (ul u ol). -->
+                <li>Un bol grande para mezclar</li>
+                <li>Un rodillo de madera</li>
+                <li>Bandeja para el horno</li>
+            </ul>
+
+            <!-- <dl>: Crea una lista de Descripción o Glosario (ideal para términos y sus definiciones). -->
+            <dl>
+                <!-- <dt>: Representa el término o concepto que se va a definir dentro de un <dl>. -->
+                <dt><strong>Levadura fresca</strong></dt>
+                <!-- <dd>: Proporciona la definición o explicación del término <dt> anterior. -->
+                <dd>Ingrediente vivo necesario para que la masa aumente su tamaño.</dd>
+
+                <dt><strong>Fermentación</strong></dt>
+                <dd>Tiempo de reposo donde la masa descansa y crece antes del horneado.</dd>
+            </dl>
+        </section>
+
+        <!-- <br />: Realiza un salto de línea simple para generar espacio. -->
+        <br />
+
+        <section class="pasos">
+            <h2>Sección 2: Pasos para elaborar la masa</h2>
+
+            <!-- <ol>: Crea una lista Ordenada (sus elementos se numera automáticamente en orden secuencial). -->
+            <h3>Pasos a seguir (Lista Ordenada):</h3>
+            <ol>
+                <li>Mezclar la harina con el agua y la levadura.</li>
+                <li>Amasar durante 10 minutos hasta obtener una mezcla suave.</li>
+                <li>Dejar reposar la masa en un lugar cálido durante 1 hora.</li>
+            </ol>
+
+            <!-- <blockquote>: Representa una cita textual o un bloque destacado de recomendaciones de un tercero. -->
+            <h3>Consejo del chef:</h3>
+            <blockquote>
+                <p>"El secreto de una buena pizza casera es no tener prisa <br/>durante el tiempo de reposo de la masa."</p>
+                <pre> "El secreto
+                    &lt; de una buenga pizza casera es &gt;
+                                                    no tener prisa"</pre>
+            </blockquote>
+        </section>
+
+        <br />
+
+        <!-- <article>: Representa un bloque de contenido autónomo e independiente (como un post o noticia). id="receta" es el marcador para el enlace interno. -->
+        <article id="receta" class="pasos">
+            <h2>Artículo: Ficha de la Pizza Margarita</h2>
+            <!-- <em>: Enfatiza el texto y por defecto lo muestra en cursiva. -->
+            <p><em>Esta publicación contiene la información completa de ingredientes para elaborar la receta.</em></p>
+
+         <!-- <figure>: Encapsula contenido multimedia como fotos, gráficos o ilustraciones. -->
+        <figure>
+            <!-- <img>: Muestra una imagen en la página web. No tiene etiqueta de cierre. -->
+            <img src="ej72 pizza.jpeg" alt="Pizza Margarita recién sacada del horno con queso fundido">
+    
+            <!-- <figcaption>: Define el pie de foto o leyenda explicativa del contenedor <figure>. -->
+            <figcaption><strong>Figura 1:</strong> Vista de la pizza Margarita recién sacada del horno.</figcaption>
+        </figure>
+
+            <!-- <table>: Contenedor principal para crear tablas estructuradas de datos. -->
+            <h3>Tabla de Ingredientes</h3>
+            <table>
+                <!-- <tbody>: Agrupa las filas que forman el cuerpo con los datos de la tabla. -->
+                <tbody>
+                    <!-- <tr>: Define una fila (renglón horizontal) de celdas dentro de una tabla. -->
+                    <tr>
+                        <!-- <th>: Celda de encabezado (en negrita y centrada). scope="row" indica que es la cabecera de esa fila. -->
+                        <th scope="row">Harina de trigo</th>
+                        <!-- <td>: Celda estándar con datos normales dentro de una fila de la tabla. -->
+                        <td>300 gramos</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Agua templada</th>
+                        <td>200 ml</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Queso Mozzarella</th>
+                        <td>150 gramos</td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+
+    </main>
+
+    <hr />
+
+    <!-- <footer>: Pie de página del documento o sección, suele incluir créditos, derechos o contacto. -->
+    <footer>
+        <p>&copy; 2026 Blog de Cocina Docente. Ejercicio de clase práctico.</p>
+    </footer>
+
+</body>
+
+<!-- <style>: Bloque donde se escriben las reglas de estilo CSS3 para dar formato visual a la página. -->
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        text-align: center;
+        padding: 20px;
+    }
+
+    header {
+        font-family: 'Trebuchet MS', sans-serif;
+        background-color: #2c3e50;
+        color: #ffffff;
+        text-align: center;
+        padding: 20px;
+    }
+
+    nav {
+        font-family: 'Verdana', sans-serif;
+        background-color: #34495e;
+        color: #ffffff;
+        text-align: center;
+        padding: 10px;
+    }
+
+    nav a {
+        color: #f1c40f;
+    }
+
+    section {
+        font-family: Arial, sans-serif;
+        background-color: #ffffff;
+        text-align: left;
+        padding: 25px;
+    }
+
+    article {
+        font-family: Arial, sans-serif;
+        background-color: #eaf2f8;
+        color: #1a252f;
+        text-align: left;
+        padding: 25px;
+    }
+
+    .pasos {
+        font-family: Arial, sans-serif;
+        background-color: #eaf2f8;
+        color: #0385f8;
+        text-align: left;
+        padding: 25px;
+    }
+
+    #receta {
+        font-family: Arial, sans-serif;
+        background-color: #decdd9;
+        color: #0385f8;
+        text-align: left;
+        padding: 25px;
+    }
+
+    blockquote {
+        font-family: 'Verdana', sans-serif;
+        background-color: #fff9e6;
+        color: #1a252f;
+        text-align: left;
+        padding: 15px;
+    }
+
+    figure {
+        font-family: Arial, sans-serif;
+        background-color: #ffffff;
+        text-align: center;
+        padding: 15px;
+    }
+
+    th {
+        font-family: 'Trebuchet MS', sans-serif;
+        background-color: #2c3e50;
+        color: #ffffff;
+        text-align: center;
+        padding: 10px;
+    }
+
+    td {
+        font-family: Arial, sans-serif;
+        background-color: #ffffff;
+        text-align: center;
+        padding: 10px;
+    }
+
+    footer {
+        font-family: 'Verdana', sans-serif;
+        background-color: #1a252f;
+        color: #ffffff;
+        text-align: center;
+        padding: 15px;
+    }
+</style>
+</html>

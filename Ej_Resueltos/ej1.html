@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mi Primera Página Web</title>
+</head>
+<body>
+
+  <!-- ============================================================
+       1. BLOQUE HTML: CONTENIDO Y ESTRUCTURA DE LA PÁGINA
+       ============================================================ -->
+  
+  <h1>Mi Primera Página Web Interactiva</h1>
+  
+  <!-- Le ponemos id="mensaje" para poder identificar este párrafo luego -->
+  <p id="mensaje">Haz clic en el botón para cambiar este texto.</p>
+  
+  <!-- Le ponemos id="miBoton" para poder identificar este botón desde JS -->
+  <button id="miBoton">¡Haz clic aquí!</button>
+
+
+
+  <!-- ============================================================
+       2. BLOQUE CSS: DISEÑO Y ESTILO VISUAL
+       Todo el CSS se escribe dentro de la etiqueta <style>
+       ============================================================ -->
+  <style>
+    /* Estilos generales del cuerpo de la página */
+    body {
+      font-family: Arial, sans-serif; /* Tipo de letra */
+      background-color: #eef2f5;     /* Color del fondo de pantalla */
+      text-align: center;            /* Centra todo el contenido */
+      padding: 50px;                 /* Espacio alrededor del contenido */
+    }
+
+    /* Estilo del título */
+    h1 {
+      color: #2c3e50;               /* Color de letra azul oscuro */
+    }
+
+    /* Estilo del texto del párrafo */
+    p {
+      font-size: 18px;               /* Tamaño del texto */
+      color: #555555;                /* Color del texto */
+    }
+
+    /* Estilo del botón */
+    button {
+      background-color: #3498db;     /* Color de fondo azul */
+      color: white;                  /* Color del texto */
+      font-size: 16px;               /* Tamaño de la letra */
+      padding: 12px 24px;            /* Tamaño interior del botón */
+      border: none;                  /* Sin borde externo */
+      border-radius: 6px;            /* Bordes redondeados */
+      cursor: pointer;               /* Cambia el ratón a una mano al pasar por encima */
+      transition: background 0.3s;   /* Transición suave de color al pasar el cursor */
+    }
+
+    /* Cambia el color del botón cuando pasas el ratón por encima */
+    button:hover {
+      background-color: #2980b9;     /* Azul más oscuro */
+    }
+  </style>
+
+
+
+  <!-- ============================================================
+       3. BLOQUE JAVASCRIPT: LÓGICA E INTERACTIVIDAD
+       Todo el JavaScript se escribe dentro de la etiqueta <script>
+       ============================================================ -->
+  <script>
+    // PASO 1: Buscamos en el documento HTML los elementos con sus ID y los guardamos en variables
+    const boton = document.getElementById('miBoton');
+    const mensaje = document.getElementById('mensaje');
+
+    // PASO 2: Le decimos al botón que "escuche" cuando el usuario hace un clic
+    boton.addEventListener('click', function() {
+      
+      // Cambiamos el texto que tiene el párrafo por uno nuevo
+      mensaje.textContent = "¡Enhorabuena! Has ejecutado el código JavaScript 🎉";
+      
+      // Cambiamos el color del texto a verde usando JS
+      mensaje.style.color = "#27ae60";
+      
+      // Hacemos que el texto se ponga en negrita
+      mensaje.style.fontWeight = "bold";
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<!-- <!DOCTYPE html>: Declara la versión del documento e indica al navegador que use el estándar HTML5. -->
+
+<html lang="es">
+
+<!-- <html>: Etiqueta raíz que envuelve todo el contenido del documento web. lang="es" indica que el idioma es español. -->
+
+<!-- <head>: Contenedor de metadatos e información del documento que no se muestra directamente en la pantalla. -->
+<head>
+    <!-- <meta>: Define metadatos. charset="UTF-8" establece la codificación de caracteres (acentos, ñ, etc.). -->
+    <meta charset="UTF-8">
+
+    <!-- <title>: Define el título que aparece en la pestaña del navegador. -->
+    <title>Refugio de Animales "Huellas Felices"</title>
+</head>
+
+<!-- <body>: Contiene todo el contenido visible de la página web (texto, imágenes, enlaces, etc.). -->
+<body>
+
+        <!-- <header>: Define la cabecera principal de la página web o de una sección. -->
+    <header>
+
+                <!-- <h1>: Encabezado principal de máximo nivel (solo debe haber uno importante por página). -->
+        <h1>Refugio de Animales Huellas Felices</h1>
+        <!-- <p> Dentro del header, actuando como una especie del subtítulo del h1 -->
+        <p>Adopta un amigo y dale una segunda oportunidad a un peludo.</p>
+        <!-- <ul> Lo usamos para hacer una lista sin orden, es decir, que se clasifica con puntos-->
+        <ul>
+            <!-- <li> Se usa para cada elementode una lista-->
+            <li><a href="#1">En Adopción</a></li>
+            <li><a href="#2">Cómo Adoptar</a></li>
+            <li><a href="#3">Nuestra Filosofía</a></li>
+        </ul>
+        <!-- <hr> Lo usamos para insertar una línea que aporte claridad visual a nuestra web-->
+        <hr>
+    </header>
+    <!-- <main> Comienza el cuerpo de la web, es decir, todo lo que no es cabecera ni pie-->
+    <main>
+        <!-- Creamos una primera sección a la que además, le damos un id, con el que nos podremos servir para redirigirnos a esta parte de la web-->
+        <section id="1">
+            <!-- <h2> Nos sirve para que haya cierta jerarquía entre los títulos dentro de la web, igual pasa con <h3>, <h4>, etc.-->
+            <h2>Nuestros Residentes en Adopción</h2>
+            <!-- Usamos <article> para cada una de las mascotas de la web, es muy útil para separar elementos en una web-->
+            <article>
+                <h3>Luna - Mestiza de 2 años</h3>
+                <h4>Carácter juguetón y muy cariñosa</h4>
+                <!-- Con <figure> insertamos una imagen en la web que puede provenir de nuestro equipo-->
+                <figure>
+                    <!-- <img> nos indica que insertamos la imagen, y src nos da la opción de poner en que ruta está el archivo de la foto que vamos a poner-->
+                    <img src="perro.png">
+                    <!-- Con <figcaption> ponemos un pequeño texto como pie de foto-->
+                    <figcaption>Figura 1: Luna en el área de juegos del refugio.</figcaption>
+                </figure>
+                <p>Luna llegó al refugio en marzo de 2026. Es una perra <strong>muy sociable</strong> con otros perros y niños, 
+                ideal para familias activas. Se entrega con vacunación al día y <mark>chip identificativo.</mark></p>
+            </article>
+            <!-- Aquí abrimos otro <article>, que será para la segunda mascota-->
+            <article>
+                <h3>Simba - Gato Común de 1 año</h3>
+                <h4>Tranquilo y observador</h4>
+                <figure>
+                    <!-- De nuevo, insertamos la foto de la mascota, con un pequeño texto abajo-->
+                    <img src="gato.png">
+                    <figcaption>Figura 2: Simba descansando en su espacio en el refugio.</figcaption>
+                </figure>
+                <p>Simba fue rescatado en la calle. Es un gato <em>muy mimoso</em> al que le encanta estar en regazos 
+                calientes. Requiere una casa con <mark>protecciones en ventanas.</mark></p>
+            </article>
+            <hr>
+        </section>
+        <!-- Abrimos una nueva sección para un nuevo apartado de la página-->
+        <section id="2">
+            <h2>Pasos para la Adopción Responsable</h2>
+            <p>Sigue estas etapas para completar el proceso de adopción:</p>
+            <!-- Usamos ahora <ol> para hacer una lista ordenada-->
+            <ol>
+                <!-- Ponemos un <li> por cada elemento de la lista y, ponemos la primera palabra de cada en negrita con <strong>-->
+                <li><strong>Solicitud: </strong>Rellena la ficha con tus datos e intereses.</li>
+                <li><strong>Entrevista: </strong>Charla previa para conocer el entorno donde vivirá el animal.</li>
+                <li><strong>Visita: </strong>Ven a conocer al perro o gato para ver la afinidad.</li>
+                <li><strong>Firma: </strong>Firma del contrato de adopción y entrega del animal.</li>
+            </ol>
+            <hr>
+        </section>
+        <!-- Por último abrimos la tercera sección-->
+        <section id="3">
+            <h2>Compromiso con la Protección Animal</h2>
+            <!-- Usamos <blockquote> para poner un texto de manera "literal" tal como lo ha dicho alguien-->
+            <blockquote>"Hasta que no has amado a un animal, una parte de tu alma permanece dormida."</blockquote>
+            <!-- Usamos <cite> para citar quien ha dicho el <blockquote>-->
+            <cite>— Anatole France</cite>
+            <p>Puedes consultar más información sobre la ley de bienestar animal en el sitio oficial del <a href="https://www.boe.es/">Boletín Oficial del Estado.</a></p>
+            <hr>
+        </section>
+    </main>
+    <!-- Con <footer> comienza el pie de página-->
+    <footer>
+        <!-- El &copy lo usamos para insertar el símbolo del copyright, un símbolo que no se encuentra en el teclado-->
+        <p>&copy;2026 Refugio Huellas Felices. Todos los derechos reservados.</p>
+    </footer>
+</body>
+<!-- Abrimos la etiqueta <style> de css, con la que le daremos formato a nuestra web, por ahora solo le damos un formato básico al <body>-->
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        text-align: justify;
+        padding: 20px;
+    }
+</style>
+</html>
+<!-- Acabamos cerrando las etiquetas <style> y <html>-->

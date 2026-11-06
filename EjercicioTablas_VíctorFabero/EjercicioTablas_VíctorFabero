@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tarea tablas Lenguaje de marcas</title>
+</head>
+<body>
+    <header>
+        <h1>Ejercicio Tablas</h1>
+        <nav>
+            <ul>
+                <li><a href="#tabla1">Tabla sobre frutas</a></li>
+                <li><a href="#tabla2">Tabla sobre F1</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <hr>
+        <section id="tabla1">
+            <table class="frutas">
+                <caption>Tabla sobre productores de frutas</caption>
+                <tr>
+                    <th class="frutas" scope="col">Productores</th>
+                    <th class="frutas" scope="col">Frutas</th>
+                    <th class="frutas" scope="col">Producción anual</th>
+                </tr>
+                <tr>
+                    <td class="frutas">Pepe Pérez</td>
+                    <td rowspan="2" class="frutas">Uvas</td>
+                    <td class="frutas">3 toneladas/año</td>
+                </tr>
+                <tr>
+                    <td class="frutas">Bodegas Laura</td>
+                    <td class="frutas">14 toneladas/año</td>
+                </tr>
+                <tr>
+                    <td class="frutas">Luisiano López</td>
+                    <td class="frutas">Naranjas</td>
+                    <td class="frutas">1,5 toneladas/año</td>
+                </tr>
+                <tr>
+                    <td class="frutas">Dayum</td>
+                    <td class="frutas">Fresas</td>
+                    <td class="frutas">5 toneladas/año</td>
+                </tr>
+            </table>
+        </section>
+        <hr>
+        <section id="tabla2">
+            <table class="f1">
+                <caption>Tabla sobre pilotos de f1</caption>
+                <tr>
+                    <th class="f1" class="piloto" scope="col">Piloto</th>
+                    <th class="f1" scope="col">Nacionalidad</th>
+                    <th class="f1" scope="col">País donde ha ganado más GP</th>
+                    <th class="f1" scope="col">Mundiales Ganados</th>
+                </tr>
+                <tr>
+                    <td class="f1" class="max">Max Verstappen</td>
+                    <td class="f1" colspan="2">Países Bajos</td>
+                    <td class="f1">4</td>
+                </tr>
+                <tr>
+                    <td class="f1" class="lewis">Lewis Hamilton</td>
+                    <td class="f1">Reino Unido</td>
+                    <td class="f1">Canadá</td>
+                    <td class="f1">7</td>
+                </tr>
+                <tr>
+                    <td class="f1" id="nano">Fernando Alonso</td>
+                    <td class="f1">España</td>
+                    <td class="f1">Hungría</td>
+                    <td class="f1">2</td>
+                </tr>
+            </table>
+        </section>
+        <hr>
+    </main>
+    <footer>
+        <p>&copy;Víctor Fabero Amaya</p>
+    </footer>
+</body>
+<style>
+    .frutas{
+        border: 5px solid black;
+        border-collapse: collapse;
+        padding: 20px;
+        text-align: center;
+        background-color: khaki;
+    }
+    .f1{
+        border: 3px solid rgb(211, 2, 2);
+        border-collapse: collapse;
+        padding: 15px;
+        text-align: center;
+        background-color: darksalmon;
+    }
+    #nano{
+        background-color: darkseagreen;
+    }
+    #lewis{
+        background-color: lightcoral;
+    }
+    #max{
+        background-color: azure;
+    }
+</style>
+</html>
