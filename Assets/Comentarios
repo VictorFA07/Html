@@ -1,160 +1,180 @@
 <!DOCTYPE html>
 
-<!-- <!DOCTYPE html>: Declara la versión del documento e indica al navegador que use el estándar HTML5. -->
+<!-- <!DOCTYPE html>: Declara la versión del documento e indica al navegador que use el estándar HTML5 -->
 
 <html lang="es">
 
-<!-- <html>: Etiqueta raíz que envuelve todo el contenido del documento web. lang="es" indica que el idioma es español. -->
+<!-- <html>: Etiqueta raíz que envuelve todo el contenido del documento web. lang="es" indica que el idioma es español -->
 
 <head>
 
-<!-- <head>: Contenedor de metadatos e información del documento que no se muestra directamente en la pantalla. -->
+<!-- <head>: Contenedor de metadatos e información del documento que no se muestra directamente en la pantalla -->
 
 <link rel="stylesheet" href="Ejercicio_x/css">
 
-<!-- Con <link> relacionamos el html con otro fichero por separado en el que está nuestro formato css-->
-<!--Dentro de <link> ponemos rel="stylesheet" siempre, para referenciar que el archivo es de formato css y href para aclarar la dirección del archivo-->
+<!-- Con <link> relacionamos el html con otro fichero por separado en el que está nuestro formato css
+Dentro de <link> ponemos rel="stylesheet" siempre, para referenciar que el archivo es de formato css y href para aclarar la dirección del archivo -->
     
 <meta charset="UTF-8">
 
-<!-- <meta>: Define metadatos. charset="UTF-8" establece la codificación de caracteres (acentos, ñ, etc.). -->
+<!-- <meta>: Define metadatos. charset="UTF-8" establece la codificación de caracteres (acentos, ñ, etc.) -->
 
 <title>
 
-<!-- <title>: Define el título que aparece en la pestaña del navegador. -->
+<!-- <title>: Define el título que aparece en la pestaña del navegador -->
 
 <body>
 
-<!-- <body>: Contiene todo el contenido visible de la página web (texto, imágenes, enlaces, etc.). -->
+<!-- <body>: Contiene todo el contenido visible de la página web (texto, imágenes, enlaces, etc.) -->
 
 <header>
 
-<!-- <header>: Define la cabecera principal de la página web o de una sección. -->
+<!-- <header>: Define la cabecera principal de la página web o de una sección -->
 
 <main>
 
-<!-- <main> Comienza el cuerpo de la web, es decir, todo lo que no es cabecera ni pie-->
+<!-- <main> Comienza el cuerpo de la web, es decir, todo lo que no es cabecera ni pie -->
 
 <footer>
 
-<!-- Con <footer> comienza el pie de página-->
+<!-- Con <footer> comienza el pie de página -->
 
 <h1>
 
-<!-- <h1>: Encabezado principal de máximo nivel (solo debe haber uno importante por página). -->
+<!-- <h1>: Encabezado principal de máximo nivel (solo debe haber uno importante por página) -->
 
 <h2>
 
-<!-- <h2> Nos sirve para que haya cierta jerarquía entre los títulos dentro de la web, igual pasa con <h3>, <h4>, etc.-->
+<!-- <h2> Nos sirve para que haya cierta jerarquía entre los títulos dentro de la web, igual pasa con <h3>, <h4>, etc -->
 
 <h3>
 
-<!-- <h3> Nos sirve para hacer un tulo de menor importancia que el h2-->
+<!-- <h3> Nos sirve para hacer un tulo de menor importancia que el h2 -->
 
 <h4>
 
-<!-- <h4> Lo usamos para un título que no tenga gran importancia, pero siga siendo algo más relevanteque otros-->
+<!-- <h4> Lo usamos para un título que no tenga gran importancia, pero siga siendo algo más relevanteque otros -->
 
 <p>
 
-<!-- <p> Dentro del header, actuando como una especie del subtítulo del h1 -->
-<!-- <p> Actúa como un pequeño párrafo de texto-->
-<!-- Usamos <p> en el footer siempre que haya que poner los derechos reservado de la web-->
+<!-- <p> Dentro del header, actuando como una especie del subtítulo del h1 
+<p> Actúa como un pequeño párrafo de texto
+Usamos <p> en el footer siempre que haya que poner los derechos reservado de la web -->
 
 <a>
 
-<!--Usamos <a> con href para referenciar, en este caso a un elemento de la web con un id-->
-<!--Usamos <a> con href que nos redirigirá a la dirección web que pongamos-->
+<!-- Usamos <a> con href para referenciar, en este caso a un elemento de la web con un id
+Usamos <a> con href que nos redirigirá a la dirección web que pongamos -->
 
 <strong>
 
-<!-- Con <strong> marcamos en negrita palabras que tengan relevancia en el texto-->
+<!-- Con <strong> marcamos en negrita palabras que tengan relevancia en el texto -->
 
 <mark>
 
-<!-- Aquí usamos <mark> para que parte del texto importante se vea resaltado como con un subrayador-->
+<!-- Aquí usamos <mark> para que parte del texto importante se vea resaltado como con un subrayador -->
 
 <ul>
 
-<!-- <ul> Lo usamos para hacer una lista sin orden, es decir, que se clasifica con puntos-->
+<!-- <ul> Lo usamos para hacer una lista sin orden, es decir, que se clasifica con puntos -->
 
 <ol>
 
-<!-- Usamos ahora <ol> para hacer una lista ordenada-->
+<!-- Usamos ahora <ol> para hacer una lista ordenada -->
 
 <li>
 
-<!-- <li> Se usa para cada elementode una lista-->
+<!-- <li> Se usa para cada elementode una lista -->
 
 <hr>
 
-<!-- <hr> Lo usamos para insertar una línea que aporte claridad visual a nuestra web-->
+<!-- <hr> Lo usamos para insertar una línea que aporte claridad visual a nuestra web -->
 
 <section>
 
-<!-- Creamos una sección que le va a dar claridad al código de nuestra web-->
-<!-- Creamos una primera sección a la que además, le damos un id, con el que nos podremos servir para redirigirnos a esta parte de la web-->
-<!-- Pasamos ahora a crear la segunda sección de nuestra página web-->
-<!-- Por último creamos una tercera sección-->
+<!-- Creamos una sección que le va a dar claridad al código de nuestra web
+Creamos una primera sección a la que además, le damos un id, con el que nos podremos servir para redirigirnos a esta parte de la web
+Pasamos ahora a crear la segunda sección de nuestra página web
+Por último creamos una tercera sección -->
 
 <article>
             
-<!-- Usamos <article> para separar elementos que estén algo relacionados en una web-->
+<!-- Usamos <article> para separar elementos que estén algo relacionados en una web -->
 
 <div>
 
-<!-- Usmaos <div> para contener en él las tablas-->
+<!-- Usmaos <div> para contener en él las tablas -->
 
 <figure>
 
-<!-- Con <figure> insertamos una imagen en la web que puede provenir de nuestro equipo-->
+<!-- Con <figure> insertamos una imagen en la web que puede provenir de nuestro equipo -->
                 
 <img src="perro.png">
 
-<!-- <img> nos indica que insertamos la imagen, y src nos da la opción de poner en que ruta está el archivo de la foto que vamos a poner-->
+<!-- <img> nos indica que insertamos la imagen, y src nos da la opción de poner en que ruta está el archivo de la foto que vamos a poner -->
 
 <figcaption>
 
-<!-- Con <figcaption> ponemos un pequeño texto como pie de foto-->
+<!-- Con <figcaption> ponemos un pequeño texto como pie de foto -->
 
 <blockquote>
 
-<!-- Usamos <blockquote> para poner un texto de manera "literal" tal como lo ha dicho alguien-->
+<!-- Usamos <blockquote> para poner un texto de manera "literal" tal como lo ha dicho alguien -->
 
 <cite>
 
-<!-- Usamos <cite> para citar quien ha dicho el <blockquote>-->
+<!-- Usamos <cite> para citar quien ha dicho el <blockquote> -->
 
 <form action="" method="">
 
-<!-- Usamos <form> para hacer un cuadro de formularios. Su atributo method puede tomar los valores dialog/get/post-->
+<!-- Usamos <form> para hacer un cuadro de formularios. Su atributo method puede tomar los valores dialog/get/post, solemos usar post -->
 
 <fieldset>
 
-<!-- Se usa <fieldset> para agrupar campos en un formulario-->
+<!-- Se usa <fieldset> para agrupar campos en un formulario -->
 
 <legend>
 
-<!-- Ponemos <legend> dentro de fieldset para nombrar el campo, algo así como una sección-->
+<!-- Ponemos <legend> dentro de fieldset para nombrar el campo, algo así como una sección -->
+
+<label for="">
+
+<!-- Con <label> escribimos el enunciado que le corresponde a cada pregunta en un formulario. Le ponemos el atributo for para referenciar al <input> del que es enunciado -->
+
+<input id="" name="" type="" required min="" max="" value="" step="" placeholder="">
+
+<!-- Usamos input para poner el campo donde el usuario deberá de rellenar algo; siempre le ponemos un id y un nombre, con name.
+ Con placeholder ponemos el texto que saldrá como ejemplo, por otro lado, con value ponemos la respuesta que estará por defecto.
+ Usamos min y max para seleccionar los valores máximos y mínimos numéricamente de la cuestión, por otro lado, con step elegimos 
+ cuál es la diferencia entre los posibles valores, si esta es cualquiera, ponemos "any". Usamos required para marcar una cuestión como obligatoria.
+ Con type elegimos de que tipo es la cuestión -->
+
+<datalist>
+
+<!-- Con <datalist> creamos una lista donde agruparemos opciones para un formulario en el que las ofrezcamos -->
+
+<option>
+
+<!-- Con <option> creamos una opción dentro de datalist -->
 
 &copy;
     
-<!-- El &copy lo usamos para insertar el símbolo del copyright, un símbolo que no se encuentra en el teclado-->
+<!-- El &copy lo usamos para insertar el símbolo del copyright, un símbolo que no se encuentra en el teclado -->
 
 <style>
 
-/*Abrimos la etiqueta <style> de css, con la que le daremos formato a nuestra web, por ahora solo le damos un formato básico al <body>*/
-/* Usamos / seguido de * para hacer comentarios en el apartado de css (y los cerramos en orden inverso) */
+/*Abrimos la etiqueta <style> de css, con la que le daremos formato a nuestra web, por ahora solo le damos un formato básico al <body>
+Usamos / seguido de * para hacer comentarios en el apartado de css (y los cerramos en orden inverso) */
 
 body {
-    font-family: Arial, sans-serif; /* Elige las primeras y segundas opciones de fuente de letra*/
-    background-color: #f4f4f4; /* Elige el color del fondo*/
-    color: #000000; /* Elige el color de las letras*/
-    text-align: justify; /* Señala qué tipo de alineación tendrá el texto*/
-    padding: 20px; /* Delimita cuál es el espaciado alrededor del texto*/
+    font-family: Arial, sans-serif; /* Elige las primeras y segundas opciones de fuente de letra */
+    background-color: #f4f4f4; /* Elige el color del fondo */
+    color: #000000; /* Elige el color de las letras */
+    text-align: justify; /* Señala qué tipo de alineación tendrá el texto */
+    padding: 20px; /* Delimita cuál es el espaciado alrededor del texto */
 }
 
 </style>
 </html>
 
-<!-- Acabamos cerrando las etiquetas con </style> y </html>-->
+<!-- Acabamos cerrando las etiquetas con </style> y </html> -->
