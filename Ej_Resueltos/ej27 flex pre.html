@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejemplo Básico de Flexbox: Filas y Columnas</title>
+    <style>
+        /* Estilos generales para los hijos */
+        .caja-hija {
+            background-color: #3498db;
+            color: white;
+            padding: 10px;
+            margin: 5px;
+            font-weight: bolder;
+        }
+
+        /* 1. PADRE EN FILA (ROW) */
+        .padre-filas {
+            /* Estilos del contenedor */
+            background-color: #e0e0e0;
+            border: 2px solid #333333;
+            margin-bottom: 30px;
+            padding: 15px;
+            height: 150px;
+
+            /* Configuración Flexbox */
+            display: flex;
+            flex-direction: row;       /* Elementos uno al lado del otro */
+            justify-content: center;   /* Centra las cajas en HORIZONTAL */
+            align-items: center;      /* Centra las cajas en VERTICAL */
+        }
+
+        /* 2. PADRE EN COLUMNA (COLUMN) */
+        .padre-columnas {
+            /* Estilos del contenedor */
+            background-color: #e0e0e0;
+            border: 2px solid #333333;
+            margin-bottom: 30px;
+            padding: 15px;
+            height: 200px;             /* Un poco más alto para las 3 filas */
+
+            /* Configuración Flexbox */
+            display: flex;
+            flex-direction: column;    /* Elementos uno debajo del otro */
+            justify-content: center;   /* Centra las cajas en VERTICAL */
+            align-items: center;      /* Centra las cajas en HORIZONTAL */
+        }
+    </style>
+</head>
+<body>
+
+    <h2>1. Contenedor en Filas (flex-direction: row)</h2>
+    <div class="padre-filas">
+        <div class="caja-hija">Caja 1</div>
+        <div class="caja-hija">Caja 2</div>
+        <div class="caja-hija">Caja 3</div>
+    </div>
+
+    <h2>2. Contenedor en Columnas (flex-direction: column)</h2>
+    <div class="padre-columnas">
+        <div class="caja-hija">Caja A</div>
+        <div class="caja-hija">Caja B</div>
+        <div class="caja-hija">Caja C</div>
+    </div>
+
+</body>
+</html>

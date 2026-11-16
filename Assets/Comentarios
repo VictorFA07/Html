@@ -173,6 +173,18 @@ body {
     text-align: justify; /* Señala qué tipo de alineación tendrá el texto */
     padding: 20px; /* Delimita cuál es el espaciado alrededor del texto */
 }
+.padre-filas-tabla {
+    background-color: aliceblue;
+    border: 2px solid blue;
+    margin-bottom: 30px;
+    padding: 15px;
+    height: 150px;
+
+    display: flex;
+    flex-direction: row; /* Elementos uno al lado del otro */
+    justify-content: center; /* Centra las cajas en horizontal */
+    align-items: center; /* Centra las cajas en vertical */
+}
 
 </style>
 </html>
