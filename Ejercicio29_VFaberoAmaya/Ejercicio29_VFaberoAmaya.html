@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>>
+<head>
 
     <meta charset="UTF-8">
     <title>Ej 29 FlexBox</title>
@@ -19,7 +19,7 @@
             <ul>
                 <li><a href="#Planes">Planes</a></li>
                 <li><a href="#Novedades">Novedades</a></li>
-                <li><a href="#Contacto">Contacto</a>"</li>
+                <li><a href="#Contacto">Contacto</a></li>
             </ul>
 
         </nav>
@@ -30,7 +30,7 @@
 
         <section class="fila-planes" id="Planes">
 
-            <article id="Plan-Basico">
+            <article class="Planes-2">
 
                 <h2>Plan Básico</h2>
 
@@ -64,7 +64,7 @@
 
             </article>
 
-            <article id="Plan-Empresa">
+            <article class="Planes-2">
 
                 <h2>Plan Empresa</h2>
 
@@ -147,18 +147,20 @@
 <style>
 
     body {
-        background-color: aliceblue;
+        background-color: rgb(252, 214, 214);
         text-align: center;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
 
     header {
         background-color: rgb(5, 49, 179);
-        color: white;
+        color: rgb(255, 205, 205);
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        gap: 10px;
+        padding: 10px;
     }
 
     nav {
@@ -171,23 +173,23 @@
         flex-direction: row;
         justify-content: center;
         align-items: stretch;
+        border-radius: 5px;
+        gap: 5px;
     }
 
-    #Plan-Basico {
+    .Planes-2 {
         flex-grow: 1;
         width: 0;
         align-self: center;
-    }
-
-    #Plan-Empresa {
-        flex-grow: 1;
-        width: 0;
-        align-self: center;
+        background-color: #d5ddfd;
+        border-radius: 5px;
     }
 
     #Plan-Pro {
         flex-grow: 2;
         width: 0;
+        background-color: #f8e9db;
+        border-radius: 5px;
     }
 
     .fila-inferior {
@@ -228,11 +230,30 @@
     }
 
     .ArticuloNaranja {
-        background-color: #fa983a;
+        background-color: #fadfc6;
+        border: #fa983a 1px solid;
     }
 
     .ListaVentajas {
         text-align: justify;
+    }
+
+    button {
+        padding: 10px 20px;
+        background-color: #1e3799;
+        color: white;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+    }
+
+    .BotonNaranja {
+        padding: 10px 20px;
+        background-color: #fa983a;
+        color: #1e3799;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
     }
 </style>
 

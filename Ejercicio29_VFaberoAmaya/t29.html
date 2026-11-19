@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Ejercicio 29</title>
+</head>
+<body>
+    <header class = "padre">
+        <h1>CloudHost ES</h1>
+            <div>
+                <button type = "submit" class = "botones"><a href="#planes">Planes</a></button>
+                <button type = "submit" class = "botones"><a href="#novedades">Novedades</a></button>
+                <button type = "submit" class = "botones"><a href="#contacto">Contacto</a></button>
+            </div>
+    </header>
+    
+    <main>
+        <section class = "padre" id = "planes">
+            <article id = "basico">
+                <h2>Plan Básico</h2>
+                <p class = "precio">9€ / mes</p>
+                <ul>
+                    <li>1 sitio web</li>
+                    <li>10 GB de Almacenamiento</li>
+                    <li>Soporte por correo</li>
+                </ul>
+                <button type = "submit" class = "center">Elegir Básico</button>
+            </article>
+
+            <article id = "pro">
+                <h2 id = "titulo-pro">Plan Pro(Recomendado)</h2>
+                <p class = "precio-pro">19€ / mes</p>
+                <ul>
+                    <li>Sitios-Web ilimitados</li>
+                    <li>100 GB de Almacenamiento SSD</li>
+                    <li>Dominio gratis durante 1 año</li>
+                    <li>Copias de seguridad diarias</li>
+                    <li>Soporte prioritario 24/7</li>
+                </ul>
+                <button type = "submit" class = "center" id = "boton-pro">Elegir Plan Pro</button>
+            </article>
+
+            <article id = "empresa">
+                <h2>Plan Empresa</h2>
+                <p class = "precio">49€ / mes</p>
+                <ul>
+                    <li>Servidor delicado</li>
+                    <li>500 GB de Almacenamiento</li>
+                    <li>IP fija exclusiva</li>
+                </ul>
+                <button type = "submit" class = "center">Elegir Empresa</button>
+            </article>
+        </section>
+    </main> 
+    </body>
+
+    <footer>
+        <p>CloudHost ES &copy; 2026 - Todos los derechos reservados.</p>
+    </footer>
+    
+</html>
+
+<style>
+
+    .padre {
+        display: flex;
+        justify-content: space-around;
+        background-color: #f0f0f0;
+        padding: 10px;
+        justify-content : space-evenly;
+        gap: 10px;
+    }
+
+    .botones {
+        display: flex;
+        gap: 10px;
+        background-color: #fa983a;
+        color: #1e3799;
+        border-radius: 5px;
+        padding: 10px 20px;
+    }
+
+    .precio {
+        text-align: center;
+        border : 2px solid #000000;
+        border-radius: 5px;
+        background-color: #cefff7;
+        padding: 5px;
+    }
+
+    #planes {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+        background-color: #8a8282;
+        padding: 10px;
+        justify-content : space-evenly;
+        gap: 10px;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    #basico, #empresa {
+        flex-grow: 1;
+        height: 80%;
+        align-self: center;
+        border: 2px solid #000000;
+        border-radius: 10px;
+        padding: 20px;
+        text-align: left;
+        background-color: #ffffff;
+    }
+
+    #pro {
+        flex-grow: 2;
+        height: 100%;
+        border: 2px solid #000000;
+        border-radius: 10px;
+        padding: 20px;
+        text-align: left;
+        background-color: #1e3799;
+        color : #ffffff;
+    }
+
+    #titulo-pro {
+        text-align: center;
+        color: #fa983a;
+    }
+
+    .precio-pro {
+        text-align: center;
+        border : 2px solid #fa983a;
+        border-radius: 5px;
+        background-color: #04103d;
+        padding: 5px;
+        color : #fa983a
+    }
+
+    #boton-pro {
+        padding: 10px 20px;
+        background-color: #fa983a;
+        color: #1e3799;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+    }
+
+    .center {
+        display: flex;
+        justify-self: center;
+    }
+
+    button {
+        padding: 10px 20px;
+        background-color: #1e3799;
+        color: white;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+    }
+
+</style>
