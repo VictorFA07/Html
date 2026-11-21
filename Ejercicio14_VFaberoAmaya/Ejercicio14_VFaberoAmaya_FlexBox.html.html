@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Moda Urbana - Tienda de Ropa</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: 'Trebuchet MS', sans-serif;
+            background-color: #f8f8f8;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* HEADER (flexbox) */
+        header{
+            font-family: 'Helvetica Neue', Arial;
+            background-color: #111111;
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+
+        header h1,
+        header p{
+            margin: 0;
+        }
+
+        nav{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            gap: 15px;
+        }
+
+        nav ul{
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav a{
+            display: block;
+            padding: 8px 18px;
+            background-color: #f2efe9;
+            color: #111111;
+            text-decoration: none;
+            border-radius: 20px;
+        }
+
+        nav a:hover{
+            background-color: #c9a66b;
+        }
+
+        main{
+            margin: 20px 0;
+        }
+
+        /* COLECCIÓN: tarjetas en fila */
+        #coleccion{
+            font-family: Arial, sans-serif;
+            background-color: #f2efe9;
+            padding: 40px;
+            border-radius: 15px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: stretch;
+            gap: 20px;
+        }
+
+        #coleccion h2{
+            flex-basis: 100%;
+            margin-top: 0;
+        }
+
+        #coleccion article{
+            flex: 1 1 250px;
+            background-color: white;
+            border-radius: 15px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #coleccion figure{
+            margin: 0 0 15px 0;
+        }
+
+        #coleccion img{
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        #coleccion p{
+            margin-top: auto;
+        }
+
+        button{
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #111111;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        button:hover{
+            background-color: #c9a66b;
+        }
+
+        /* TALLAS */
+        #tallas{
+            font-family: 'Georgia', serif;
+            background-color: #eaf2f8;
+            text-align: left;
+            padding: 30px;
+            border-radius: 15px;
+        }
+
+        #tallas div{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        /* FAQ */
+        #faq{
+            font-family: 'Verdana', sans-serif;
+            background-color: #eaafaf25;
+            text-align: right;
+            padding: 30px;
+            border-radius: 15px;
+        }
+
+        /* FOOTER (flexbox) */
+        footer{
+            font-family: 'Comic Sans MS', cursive;
+            background-color: #222222;
+            color: white;
+            padding: 15px;
+            border-radius: 15px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        footer p{
+            margin: 0;
+        }
+
+        table, th, td{
+            border: 3px solid black;
+            border-collapse: collapse;
+            padding: 10px;
+            text-align: center;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Moda Urbana 2026 - Tendencias y Estilo</h1>
+
+        <nav>
+
+            <p>Encuentra tu estilo propio con nuestra nueva colección de temporada.</p>
+
+            <ul>
+                <li><a href="#coleccion">Colección</a></li>
+                <li><a href="#tallas">Guía de Tallas</a></li>
+                <li><a href="#faq">Preguntas Frecuentes</a></li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        <hr>
+
+        <section id="coleccion">
+
+            <h2>Nuestra Colección de Otoño</h2>
+
+            <article>
+
+                <h3>Chaqueta Denim Oversize</h3>
+
+                <h4>Edición limitada de algodón reciclado</h4>
+
+                <figure>
+
+                    <img src="Chaqueta.webp">
+
+                    <figcaption>Figura 1: Chaqueta vaquera de corte moderno unisex.</figcaption>
+
+                </figure>
+
+                <p>Novedad de septiembre de 2026. Confeccionada con <strong>algodón 100% orgánico</strong> y acabados hechos a mano.</p>
+
+                <button>Añadir al carrito</button>
+
+            </article>
+
+            <article>
+
+                <h3>Sudadera Minimalist Hoodie</h3>
+
+                <h4>Comodidad y diseño para el día a día</h4>
+
+                <figure>
+
+                    <img src="Sudadera.webp">
+
+                    <figcaption>Figura 2: Sudadera urbana en tono beige neutro.</figcaption>
+
+                </figure>
+
+                <p>Diseñada con felpa de tacto suave y chasis interior <em>ultra cálido</em>. Disponible en 4 colores.</p>
+
+                <button>Añadir al carrito</button>
+
+            </article>
+
+            <article>
+
+                <h3>Pantalón Cargo Streetwear</h3>
+
+                <h4>Múltiples bolsillos y ajuste elástico</h4>
+
+                <figure>
+
+                    <img src="Pantalón.webp">
+
+                    <figcaption>Figura 3: Pantalón cargo resistente para estilo urbano.</figcaption>
+
+                </figure>
+
+                <p>La prenda más versátil de la temporada. Destaca por ser <strong>muy funcional</strong> y cómoda.</p>
+
+                <button>Añadir al carrito</button>
+
+            </article>
+
+        </section>
+
+        <hr>
+
+        <section id="tallas">
+
+            <h2>Guía de Tallas Estándar</h2>
+
+            <p>Consulta las medidas en centímetros antes de elegir tu prenda:</p>
+
+            <div>
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+                            <th>Talla</th>
+                            <th>Pecho (cm)</th>
+                            <th>Cintura (cm)</th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>S</td>
+                            <td>88 - 92</td>
+                            <td>74 - 78</td>
+                        </tr>
+
+                        <tr>
+                            <td>M</td>
+                            <td>96 - 100</td>
+                            <td>82 - 86</td>
+                        </tr>
+
+                        <tr>
+                            <td>L</td>
+                            <td>104 - 108</td>
+                            <td>90 - 94</td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+            <p>Pasos para medirte correctamente:</p>
+
+            <ol>
+                <li><strong>Pecho: </strong>Mide el contorno por la zona más prominente.</li>
+                <li><strong>Cintura: </strong>Mide alrededor de tu cintura natural sin apretar.</li>
+            </ol>
+
+        </section>
+
+        <hr>
+
+        <section id="faq">
+
+            <h2>Dudas Frecuentes y Envíos</h2>
+
+            <details>
+
+                <summary>¿Cuánto tardan los envíos?</summary>
+
+                <p>Depende de cuántos trabajadores tengamos en el momento del pedido.</p>
+
+            </details>
+
+            <details>
+
+                <summary>¿Cómo funcionan las devoluciones?</summary>
+
+                <p>No lo sabemos nosotros tampoco.</p>
+
+            </details>
+
+            <blockquote>"Moda Urbana destaca por su rapidez de entrega y excelente calidad de prendas en 2026."</blockquote>
+
+            <cite>— Revista Tendencias & Moda</cite>
+
+            <p>Para más información consulta la <a href="https://www.asociacionmoda.es/">Asociación de Comercio Textil</a>.</p>
+
+        </section>
+
+        <hr>
+
+    </main>
+
+    <footer>
+
+        <p>&copy; 2026 Moda Urbana SpA. Todos los derechos reservados.</p>
+
+    </footer>
+
+</body>
+
+</html>

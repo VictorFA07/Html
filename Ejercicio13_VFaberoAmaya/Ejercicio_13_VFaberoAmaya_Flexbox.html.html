@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>TechStore - Tienda de Informática</title>
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>TechStore 2026 - Tu Tienda de Informática</h1>
+
+        <p>Los mejores componentes y ordenadores montados al mejor precio.</p>
+
+        <ul>
+
+            <li class="lista"><a href="#catalogo">Catálogo</a></li>
+            <li class="lista"><a href="#garantia">Garantía</a></li>
+            <li class="lista"><a href="#opiniones">Opiniones</a></li>
+        </ul>
+    </header>
+
+    <hr>
+
+    <main>
+
+        <section id="catalogo">
+
+            <h2>Catálogo de Ordenadores Destacados</h2>
+
+            <article>
+
+                <h3>PC Gaming Ultra 2026</h3>
+
+                <h4>Ideal para jugar a 4K y streaming</h4>
+
+                <figure>
+
+                    <img src="Foto.png">
+
+                    <figcaption>Figura 1: Torre PC Gaming con refrigeración líquida.</figcaption>
+
+                </figure>
+                <p>Lanzado en enero de 2026. Equipado con procesador de última generación y 32 GB de RAM. Incluye tarjeta gráfica <strong>de alta gama.</strong></p>
+            
+            </article>
+            <article>
+                <h3>Portátil Workstation Pro</h3>
+                <h4>Potencia bruta para edición de vídeo</h4>
+                <figure>
+                    <img src="Foto.png">
+                    <figcaption>Figura 2: Portátil de alto rendimiento con pantalla OLED.</figcaption>
+                </figure>
+                <p>Diseñado para profesionales que necesitan movilidad. Cuenta con pantalla de <mark>120 Hz</mark> y chasis de aluminio <em>ultra resistente.</em></p>
+
+            </article>
+            <article>
+                <h3>Mini PC Oficina Eco</h3>
+                <h4>Silencioso, compacto y de bajo consumo</h4>
+                <figure>
+                    <img src="Foto.png">
+                    <figcaption>Figura 3: Ordenador de formato reducido para escritorios pequeños.</figcaption>
+                </figure>
+                <p>La opción perfecta para tareas administrativas y navegación. Ocupa <strong>muy poco espacio.</strong></p>
+            </article>
+        </section>
+
+        <hr>
+
+        <section id="garantia">
+
+            <h2>Pasos para Tramitar tu Garantía</h2>
+            <p>Sigue estas etapas si necesitas soporte técnico o sustitución:</p>
+            <ol>
+
+                <li><strong>Diagnóstico: </strong>Ponte en contacto con nuestro equipo técnico.</li>
+                <li><strong>Envío: </strong>Prepara el equipo en su caja original.</li>
+                <li><strong>Reparación: </strong>Nuestros técnicos revisan y reparan el equipo.</li>
+                <li><strong>Devolución: </strong>Te enviamos el equipo como nuevo a tu domicilio.</li>
+            </ol>
+        </section>
+        <hr>
+        <section id="opiniones">
+
+            <h2>Opinión de la Prensa Especializada</h2>
+            <blockquote>"TechStore ofrece el mejor montaje de componentes de todo el sector informático en 2026."</blockquote>
+
+            <cite>— Revista Hardware Digital</cite>
+
+            <p>Puedes leer más análisis de nuestros equipos en la web de <a href="https://www.asociacionhardware.es/">Asociación Hardware.</a></p>
+
+        </section>
+        <hr>
+    </main>
+
+    <footer>
+
+    <p>&copy;2026 TechStore Informática. Todos los derechos reservados.</p>
+
+    </footer>
+
+</body>
+
+<style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: 'Courier New', monospace;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* ---------- HEADER (flexbox) ---------- */
+        header{
+            font-family: Arial, sans-serif;
+            background-color: #1a252f;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        header h1,
+        header p{
+            margin: 0;
+        }
+
+        header ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 15px;
+            list-style: none;
+            margin: 10px 0 0 0;
+            padding: 0;
+        }
+
+        .lista{
+            color: #fdab58
+        }
+
+        .lista a{
+            display: block;
+            padding: 8px 20px;
+            border: 1px solid #fdab58;
+            border-radius: 20px;
+            color: #fdab58;
+            text-decoration: none;
+        }
+
+        .lista a:hover{
+            background-color: #fdab58;
+            color: #1a252f;
+        }
+
+        /* ---------- SECCIÓN 1: tarjetas en fila ---------- */
+        #catalogo{
+            font-family: Arial, sans-serif;
+            background-color: #eef2f5;
+            text-align: center;
+            padding: 40px;
+            border-radius: 15px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: stretch;
+            gap: 20px;
+        }
+
+        #catalogo h2{
+            flex-basis: 100%;
+            margin-top: 0;
+        }
+
+        #catalogo article{
+            flex: 1 1 250px;
+            background-color: white;
+            border: 1px solid #c9d3dc;
+            border-radius: 15px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #catalogo figure{
+            margin: 0 0 15px 0;
+        }
+
+        #catalogo img{
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        #catalogo p{
+            margin-top: auto;
+        }
+
+        /* ---------- SECCIÓN 2 ---------- */
+        #garantia{
+            font-family: 'Georgia', serif;
+            background-color: #fff8dc;
+            text-align: left;
+            padding: 30px;
+            border-radius: 15px;
+        }
+
+        #garantia ol{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        /* ---------- SECCIÓN 3 ---------- */
+        #opiniones{
+            font-family: 'Verdana', sans-serif;
+            background-color: #e8f8f5;
+            text-align: right;
+            padding: 30px;
+            border-radius: 15px;
+        }
+
+        /* ---------- FOOTER (flexbox) ---------- */
+        footer{
+            font-family: 'Comic Sans MS', cursive;
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            border-radius: 15px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        footer p{
+            margin: 0;
+        }
+
+    </style>
+
+</html>

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Ej 29 FlexBox</title>
+
+</head>
+
+<body>
+
+    <header>
+        <h1>CloudHost ES</h1>
+
+        <nav>
+            <ul>
+                <li><a href="#Planes">Planes</a></li>
+                <li><a href="#Novedades">Novedades</a></li>
+                <li><a href="#Contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="fila-planes" id="Planes">
+
+            <article class="Planes-2">
+                <h2>Plan Básico</h2>
+                <p class="precio">9€ / mes</p>
+                <ul class="lista-ventajas">
+                    <li>1 Sitio Web</li>
+                    <li>10 Gb de almacenamiento</li>
+                    <li>Soporte por correo</li>
+                </ul>
+                <button>Elegir Básico</button>
+            </article>
+
+            <article id="Plan-Pro">
+                <h2>Plan Pro (Recomendado)</h2>
+                <p class="precio">19€ / mes</p>
+                <ul class="lista-ventajas">
+                    <li>Sitios Web ilimitados</li>
+                    <li>100 Gb de Almacenamiento SSD</li>
+                    <li>Dominio gratis durante 1 año</li>
+                    <li>Copias de seguridad diarias</li>
+                    <li>Soporte prioritario 24/7</li>
+                </ul>
+                <button class="BotonNaranja">Contratar Plan Pro</button>
+            </article>
+
+            <article class="Planes-2">
+                <h2>Plan Empresa</h2>
+                <p class="precio">49€ / mes</p>
+                <ul class="lista-ventajas">
+                    <li>Servidor dedicado</li>
+                    <li>500 Gb de Almacenamiento</li>
+                    <li>IP fija exclusiva</li>
+                </ul>
+                <button>Elegir Empresa</button>
+            </article>
+
+        </section>
+
+        <section class="fila-inferior" id="Novedades">
+
+            <div class="columna-doble">
+
+                <article class="caja-destacada-mini">
+                    <h3>Novedad: Servidores en Madrid</h3>
+                    <p>Todos nuestros planes ya cuentan con alojamiento en territorio nacional para máxima velocidad.</p>
+                </article>
+
+                <article class="caja-info">
+                    <h3>Migración Gratuita</h3>
+                    <p>Trae tu página web desde otro proveedor y nuestro equipo técnico la traslada sin cortes de servicio.</p>
+                </article>
+
+            </div>
+
+            <div class="columna-triple">
+
+                <article class="caja-info">
+                    <h3>¿Puedo cambiar de plan?</h3>
+                    <p>Sí, puedes subir o bajar de tarifa en cualquier momento desde tu panel.</p>
+                </article>
+
+                <article class="caja-info">
+                    <h3>¿Hay permanencia?</h3>
+                    <p>Ninguna. Todos los contratos son mensuales y se cancelan con un clic.</p>
+                </article>
+
+                <article class="caja-destacada-mini">
+                    <h3>Garantía de 30 días</h3>
+                    <p>Si no quedas satisfecho durante el primer mes, te devolvemos el importe íntegro.</p>
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer id="Contacto">
+        <p>CloudHost ES &copy; 2026 - Todos los derechos reservados</p>
+    </footer>
+
+</body>
+
+<style>
+
+        body {
+            background-color: #eaf2fb;
+            text-align: center;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #1e3799;
+            color: white;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 25px;
+            margin-bottom: 25px;
+            border-radius: 0 0 18px 18px;
+        }
+
+        nav ul {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav a {
+            display: block;
+            padding: 8px 18px;
+            background-color: #dde4ff;
+            color: #1e3799;
+            text-decoration: none;
+            border-radius: 20px;
+        }
+
+        nav a:hover {
+            background-color: #fa983a;
+            color: white;
+        }
+
+        main {
+            padding: 0 25px;
+        }
+
+        .fila-planes {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: stretch;
+            height: 380px;
+            gap: 15px;
+            margin-bottom: 25px;
+            border-radius: 18px;
+        }
+
+        .Planes-2 {
+            flex-grow: 1;
+            width: 0;
+            align-self: center;
+            background-color: #d5ddfd;
+            border: 1px solid #1e3799;
+            border-radius: 15px;
+            padding: 15px;
+        }
+
+        #Plan-Pro {
+            flex-grow: 2;
+            width: 0;
+            background-color: #fadfc6;
+            border: 2px solid #fa983a;
+            border-radius: 15px;
+            padding: 15px;
+        }
+
+        .precio {
+            font-size: 24px;
+            font-weight: bold;
+            color: #1e3799;
+        }
+
+        #Plan-Pro .precio {
+            color: #fa983a;
+        }
+
+        .lista-ventajas {
+            text-align: left;
+            margin-bottom: 20px;
+            padding-left: 20px;
+        }
+
+        .lista-ventajas li {
+            margin-bottom: 8px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #1e3799;
+            color: white;
+            cursor: pointer;
+            border: none;
+            border-radius: 10px;
+        }
+
+        .BotonNaranja {
+            background-color: #fa983a;
+            color: #1e3799;
+        }
+
+        .fila-inferior {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: stretch;
+            height: 360px;
+            gap: 15px;
+            margin-bottom: 25px;
+            border-radius: 18px;
+        }
+
+        .columna-doble,
+        .columna-triple {
+            flex-grow: 1;
+            width: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .caja-info,
+        .caja-destacada-mini {
+            padding: 10px 15px;
+            border-radius: 12px;
+            text-align: left;
+        }
+
+        .caja-info {
+            background-color: #dde4ff;
+            border-left: 5px solid #1e3799;
+        }
+
+        .caja-destacada-mini {
+            background-color: #fadfc6;
+            border-left: 5px solid #fa983a;
+        }
+
+        .caja-info h3,
+        .caja-destacada-mini h3 {
+            font-size: 16px;
+            margin-top: 0;
+            margin-bottom: 5px;
+        }
+
+        .caja-info p,
+        .caja-destacada-mini p {
+            font-size: 14px;
+            margin: 0;
+        }
+
+        footer {
+            background-color: #1e3799;
+            color: white;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 15px;
+            border-radius: 18px 18px 0 0;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+
+</html>
